@@ -20,11 +20,6 @@ int initWindow(GLFWwindow*& window) {
     return 0;
 }
 
-float squareX = 0.0f;
-float squareY = 0.0f;
-
-int windowWidth = 250;
-int windowHeight = 250;
 
 
 int main() {
