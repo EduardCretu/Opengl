@@ -20,6 +20,13 @@ int initWindow(GLFWwindow*& window) {
     return 0;
 }
 
+float squareX = 0.0f;
+float squareY = 0.0f;
+
+int windowWidth = 250;
+int windowHeight = 250;
+
+
 int main() {
     //im not sure if this is fully fine, but it works right now.
     //in case of anything, just switch out the init functions with the ifs inside.
@@ -34,30 +41,33 @@ int main() {
     glfwMakeContextCurrent(window);
 
 
+
+    float x = -0.5f;      // starting position
+    float speed = 0.01f;  // movement speed
+    int direction = 1;    // 1 = right, -1 = left
+
+
+
     while (!glfwWindowShouldClose(window)) {
+
+        x += speed * direction;
+
+        if (x > 0.8f || x < -0.8f)
+            direction *= -1;
+
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // TL red
-        glColor3f(1.0f, 0.0f, 0.0f);
-        glRectf(-0.9f, 0.1f, -0.1f, 0.9f);
+        glColor3f(0.2f, 0.6f, 0.8f);
 
-        // TR green
-        glColor3f(0.0f, 1.0f, 0.0f);
-        glRectf(0.1f, 0.1f, 0.9f, 0.9f);
 
-        // BL blue
-        glColor3f(0.0f, 0.0f, 1.0f);
-        glRectf(-0.9f, -0.9f, -0.1f, -0.1f);
+        // Formula to move square diagonally
+         glRectf( (-1*x) - 0.2f,   x - 0.2f,
+                  (-1*x) + 0.2f,   x + 0.2f);
 
-        // BR yellow
-        glColor3f(1.0f, 1.0f, 0.0f);
-        glRectf(0.1f, -0.9f, 0.9f, -0.1f);
-
-        // M cyan
-        glColor3f(0.0f, 0.9f, 0.9f);
-        glRectf(-0.5f, -0.5f, 0.5f, 0.5f);
-
+        // Move square horizontally
+        // glRectf(x- 0.2f, -0.2f,
+        //         x + 0.2f, 0.2f);
 
 
 
