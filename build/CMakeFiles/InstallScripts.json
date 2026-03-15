@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nml/General/code-stuff/opengl/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
