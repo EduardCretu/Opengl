@@ -1,4 +1,4 @@
-#This is a repo for my OpenGL projects
+# This is a repo for my OpenGL projects
 
 The `main` branch holds the first two (kinda) labs. Since I am using linux and not the deprecated windows OpenGL libraries the Course asks the code differs, but its logic is the same.
 
