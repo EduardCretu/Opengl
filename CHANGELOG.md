@@ -1,11 +1,16 @@
-# 16.03.2026:
-* Added CHAHNGELOG.md to ease parsing through repo
+# Changelog
 
+## 2026-03-16
+### Added
+- `CHANGELOG.md` to make repository changes easier to track.
 
-# 15.03.2026:
-* Added lab_1 and lab_2 in `main` branch. Both are situated in main.cpp.  
-<sub>Note: lab_1 should be inferred from `main.cpp` as lab_2 simply builds upon lab_1.</sub>
-* Added Lab_demos directory to store video and image demonstrations of the running projects.
-* Added Branch lab3.  
-<sub>Note: Branch lab3 contains the code for the first and second exercise,as the only thing changing is the `glRectf();` function's calling arguments.</sub>
-* Added Branch lab3_click.
+## 2026-03-15
+### Added
+- `lab_1` and `lab_2` to the `main` branch (both implemented in `main.cpp`)
+- `Lab_demos/` directory for video and image demonstrations
+- `lab3` branch
+- `lab3_click` branch
+
+### Notes
+- `lab_2` builds on `lab_1` in `main.cpp`.
+- `lab3` contains the first and second exercises where only `glRectf()` arguments change.
