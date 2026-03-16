@@ -1,4 +1,4 @@
-# Changelog
+# CHANGELOG
 
 ## 2026-03-16
 ### Added
@@ -6,10 +6,10 @@
 
 ## 2026-03-15
 ### Added
-- `lab_1` and `lab_2` to the `main` branch (both implemented in `main.cpp`)
-- `Lab_demos/` directory for video and image demonstrations
-- `lab3` branch
-- `lab3_click` branch
+- `lab_1` and `lab_2` to the [`main`](../../tree/main) branch (both implemented in `main.cpp`)
+- [`Lab_demos/`](/Lab_demos) directory for video and image demonstrations
+- [`lab3`](../../tree/lab3)
+- [`lab3_click`](../../tree/lab3_click)
 
 ### Notes
 - `lab_2` builds on `lab_1` in `main.cpp`.
