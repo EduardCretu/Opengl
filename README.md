@@ -4,6 +4,8 @@ The `main` branch holds the first two (kinda) labs. Since I am using linux and n
 
 Each branch is named as `[lab_number]_exercise` or so, but it really depends on my mood. Base yourself on the lab number and parse through.
 
+---
+
 # CHANGELOG
 
 ## 2026-03-16
