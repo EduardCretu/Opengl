@@ -2,9 +2,22 @@
 
 The `main` branch holds the first two (kinda) labs. Since I am using linux and not the deprecated windows OpenGL libraries the Course asks the code differs, but its logic is the same.
 
-Each branch is Named as `[lab_number]_exercise` or so, but it really depends on my mood. Base yourself on the lab number and parse through.
+Each branch is named as `[lab_number]_exercise` or so, but it really depends on my mood. Base yourself on the lab number and parse through.
 
+# CHANGELOG
 
-## Documentation
+## 2026-03-16
+### Added
+- `CHANGELOG` section to make repo changes easier to track.
 
-- [Changelog](CHANGELOG.md)
+## 2026-03-15
+### Added
+- `lab_1` and `lab_2` to the [`main`](../../tree/main) branch (both implemented in `main.cpp`)
+- [`Lab_demos/`](/Lab_demos) directory for video and image demonstrations
+- Branch [`lab3`](../../tree/lab3) 
+- Branch [`lab3_click`](../../tree/lab3_click)
+
+### Notes
+- `lab_2` builds on `lab_1` in `main.cpp`.
+- `lab3` contains the first and second exercises where only `glRectf()` arguments change.
+
