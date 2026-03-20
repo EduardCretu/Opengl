@@ -20,24 +20,38 @@ int initWindow(GLFWwindow*& window) {
     return 0;
 }
 
-float squareX = 0.0f;
-float squareY = 0.0f;
+float posX = 0.0f;
+float posY = 0.0f;
+float dirX = 0.0f;
+float dirY = 0.0f;
 
-int windowWidth = 250;
-int windowHeight = 250;
-int pressed = 0;
 
-void mouse_button_callback(GLFWwindow* window, int button, int action, int mods) {
-    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS) {
-        double xpos, ypos;
-        glfwGetCursorPos(window, &xpos, &ypos);
-
-        // convert pixel coordinates → OpenGL coordinates
-        squareX = (xpos / windowWidth) * 2.0f - 1.0f;
-        squareY = -((ypos / windowHeight) * 2.0f - 1.0f);
-        pressed = 1;
-    }
-}
+// Technically the proper way to do it according to the study guide.
+// void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
+//     if (action == GLFW_PRESS || action == GLFW_REPEAT) {
+//
+//         if (key == GLFW_KEY_W) {
+//             dirY = 0.01f;
+//             dirX = 0.0f;
+//         }
+//         else if (key == GLFW_KEY_S) {
+//             dirY = -0.01f;
+//             dirX = 0.0f;
+//         }
+//         else if (key == GLFW_KEY_D) {
+//             dirY = 0.0f;
+//             dirX = 0.01f;
+//         }
+//         else if (key == GLFW_KEY_A) {
+//             dirY = 0.0f;
+//             dirX = -0.01f;
+//         }
+//     }
+//     if (action == GLFW_RELEASE) {
+//         dirX = 0.0f;
+//         dirY = 0.0f;
+//     }
+// }
 
 
 int main() {
@@ -45,7 +59,7 @@ int main() {
     //in case of anything, just switch out the init functions with the ifs inside.
     if (initGLFW() != 0) return -1;
 
-    GLFWwindow* window = glfwCreateWindow(250, 250, "First OpenGL program", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(720, 720, "Moving Square", NULL, NULL);
 
     //same here
     initWindow(window);
@@ -55,13 +69,28 @@ int main() {
 
 
 
-    float x = -0.5f;      // starting position
-    float speed = 0.01f;  // movement speed
-    int direction = 1;    // 1 = right, -1 = left
-
-    glfwSetMouseButtonCallback(window, mouse_button_callback);
-
     while (!glfwWindowShouldClose(window)) {
+
+        dirX = 0.0f;
+        dirY = 0.0f;
+
+        // Taking key inputs, check GLFW docs
+        if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+             dirY = 1.0f;
+        }
+        if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+            dirY = -1.0f;
+        }
+        if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+            dirX = 1.0f;
+        }
+        if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+            dirX = -1.0f;
+        }
+        float speed = 0.01f;
+
+        posX += dirX * speed;
+        posY += dirY * speed;
 
 
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -69,12 +98,13 @@ int main() {
 
         glColor3f(0.2f, 0.6f, 0.8f);
 
-        float s = 0.1f;
-        if(pressed == 1) {
-            glRectf(squareX - s, squareY - s,
-                    squareX + s, squareY + s);
-        }
+        glRectf(
+            posX - 0.1f, posY - 0.1f,
+            posX + 0.1f, posY + 0.1f
+        );
 
+        // Traditional use of 'callback'. It's a bit Janky..
+        //glfwSetKeyCallback(window,key_callback);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
