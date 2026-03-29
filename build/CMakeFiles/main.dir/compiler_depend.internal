@@ -5,6 +5,7 @@ CMakeFiles/main.dir/main.cpp.o
  /home/nml/General/code-stuff/opengl/main.cpp
  /usr/include/GL/gl.h
  /usr/include/GL/glext.h
+ /usr/include/GL/glu.h
  /usr/include/GLFW/glfw3.h
  /usr/include/KHR/khrplatform.h
  /usr/include/alloca.h

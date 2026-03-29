@@ -6,6 +6,9 @@ main: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libglfw.so \
   /usr/lib/libGL.so \
   /usr/lib/libGLU.so \
+  /usr/lib/libglut.so \
+  /usr/lib/libXmu.so \
+  /usr/lib/libXi.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -38,15 +41,28 @@ main: \
   /usr/lib/libGLX.so.0 \
   /usr/lib32/libOpenGL.so.0 \
   /usr/lib/libOpenGL.so.0 \
-  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib32/libX11.so.6 \
   /usr/lib/libX11.so.6 \
+  /usr/lib32/libXrandr.so.2 \
+  /usr/lib/libXrandr.so.2 \
+  /usr/lib32/libXxf86vm.so.1 \
+  /usr/lib/libXxf86vm.so.1 \
+  /usr/lib/libXt.so.6 \
+  /usr/lib32/libXext.so.6 \
+  /usr/lib/libXext.so.6 \
+  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib32/libxcb.so.1 \
   /usr/lib/libxcb.so.1 \
+  /usr/lib32/libXrender.so.1 \
+  /usr/lib/libXrender.so.1 \
+  /usr/lib/libSM.so.6 \
+  /usr/lib/libICE.so.6 \
   /usr/lib32/libXau.so.6 \
   /usr/lib/libXau.so.6 \
   /usr/lib32/libXdmcp.so.6 \
-  /usr/lib/libXdmcp.so.6
+  /usr/lib/libXdmcp.so.6 \
+  /usr/lib32/libuuid.so.1 \
+  /usr/lib/libuuid.so.1
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o:
 
@@ -61,6 +77,12 @@ CMakeFiles/main.dir/main.cpp.o:
 /usr/lib/libGL.so:
 
 /usr/lib/libGLU.so:
+
+/usr/lib/libglut.so:
+
+/usr/lib/libXmu.so:
+
+/usr/lib/libXi.so:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so:
 
@@ -126,15 +148,37 @@ CMakeFiles/main.dir/main.cpp.o:
 
 /usr/lib/libOpenGL.so.0:
 
-/usr/lib/ld-linux-x86-64.so.2:
-
 /usr/lib32/libX11.so.6:
 
 /usr/lib/libX11.so.6:
 
+/usr/lib32/libXrandr.so.2:
+
+/usr/lib/libXrandr.so.2:
+
+/usr/lib32/libXxf86vm.so.1:
+
+/usr/lib/libXxf86vm.so.1:
+
+/usr/lib/libXt.so.6:
+
+/usr/lib32/libXext.so.6:
+
+/usr/lib/libXext.so.6:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
 /usr/lib32/libxcb.so.1:
 
 /usr/lib/libxcb.so.1:
+
+/usr/lib32/libXrender.so.1:
+
+/usr/lib/libXrender.so.1:
+
+/usr/lib/libSM.so.6:
+
+/usr/lib/libICE.so.6:
 
 /usr/lib32/libXau.so.6:
 
@@ -143,3 +187,7 @@ CMakeFiles/main.dir/main.cpp.o:
 /usr/lib32/libXdmcp.so.6:
 
 /usr/lib/libXdmcp.so.6:
+
+/usr/lib32/libuuid.so.1:
+
+/usr/lib/libuuid.so.1:

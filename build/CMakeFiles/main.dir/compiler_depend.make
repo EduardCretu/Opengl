@@ -4,6 +4,7 @@
 CMakeFiles/main.dir/main.cpp.o: /home/nml/General/code-stuff/opengl/main.cpp \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
+  /usr/include/GL/glu.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
@@ -379,6 +380,8 @@ CMakeFiles/main.dir/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/streambuf_iterator.h:
 
+/usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
+
 /usr/include/c++/15.2.1/bits/basic_string.h:
 
 /usr/include/c++/15.2.1/bits/stl_iterator.h:
@@ -396,8 +399,6 @@ CMakeFiles/main.dir/main.cpp.o:
 /usr/include/c++/15.2.1/string:
 
 /usr/include/GLFW/glfw3.h:
-
-/usr/include/bits/types.h:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -445,7 +446,9 @@ CMakeFiles/main.dir/main.cpp.o:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
-/usr/include/bits/floatn.h:
+/usr/include/c++/15.2.1/pstl/pstl_config.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/stdc-predef.h:
 
@@ -455,33 +458,15 @@ CMakeFiles/main.dir/main.cpp.o:
 
 /usr/include/bits/types/__sigset_t.h:
 
+/usr/include/bits/floatn.h:
+
 /usr/lib/libc_nonshared.a:
 
 /usr/include/c++/15.2.1/bits/basic_ios.h:
 
-/usr/include/c++/15.2.1/pstl/pstl_config.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/lib/libGL.so:
-
-/usr/include/bits/stdint-least.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/GL/gl.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/asm/types.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
 /usr/include/bits/types/clock_t.h:
 
 /usr/include/bits/types/__fpos_t.h:
-
-/usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
 
 /usr/include/asm-generic/errno.h:
 
@@ -517,6 +502,32 @@ CMakeFiles/main.dir/main.cpp.o:
 
 /usr/include/bits/byteswap.h:
 
+/usr/lib/libGL.so:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/GL/gl.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/asm/types.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/GL/glu.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/c++/15.2.1/bits/basic_string.tcc:
+
 /usr/include/c++/15.2.1/ostream:
 
 /usr/include/bits/libc-header-start.h:
@@ -537,8 +548,6 @@ CMakeFiles/main.dir/main.cpp.o:
 
 /usr/include/GL/glext.h:
 
-/usr/include/bits/types/locale_t.h:
-
 /usr/include/asm-generic/int-ll64.h:
 
 /usr/include/bits/struct_mutex.h:
@@ -547,19 +556,11 @@ CMakeFiles/main.dir/main.cpp.o:
 
 /usr/include/bits/typesizes.h:
 
-/usr/include/features.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/bits/endianness.h:
-
 /usr/lib/libXau.so.6:
-
-/usr/include/bits/uintn-identity.h:
 
 /usr/include/c++/15.2.1/bit:
 
-/usr/include/c++/15.2.1/bits/basic_string.tcc:
+/usr/include/bits/uintn-identity.h:
 
 /usr/include/bits/locale.h:
 
@@ -570,6 +571,8 @@ CMakeFiles/main.dir/main.cpp.o:
 /usr/include/bits/errno.h:
 
 /usr/include/bits/floatn-common.h:
+
+/usr/include/bits/types/locale_t.h:
 
 /usr/include/bits/types/mbstate_t.h:
 
